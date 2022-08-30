@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./images/burguer.png";
 
-const Header = () => {
+const Navbar = () => {
     return(
         <div>
             <ul className="nav d-flex align-items-center">
@@ -22,4 +22,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Navbar;

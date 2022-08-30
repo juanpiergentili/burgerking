@@ -1,9 +1,10 @@
 import './App.css';
-import Cupones from './assets/Cupones';
-import Destacado from './assets/Destacado';
-import Footer from './assets/Footer';
-import Header from './assets/Header';
-import PromoApp from './assets/PromoApp';
+import Cupones from './components/Cupones';
+import Destacado from './components/Destacado';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import PromoApp from './components/PromoApp';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
