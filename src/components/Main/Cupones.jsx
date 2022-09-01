@@ -1,7 +1,7 @@
 import React from "react";
-import cupon1 from "./images/cupon1.jpeg";
-import cupon2 from "./images/cupon2.jpeg";
-import cupon3 from "./images/cupon3.jpeg";
+import cupon1 from "../images/cupon1.jpeg";
+import cupon2 from "../images/cupon2.jpeg";
+import cupon3 from "../images/cupon3.jpeg";
 
 const Cupones = () => {
     return(

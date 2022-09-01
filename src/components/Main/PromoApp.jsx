@@ -1,6 +1,6 @@
 import React from "react";
 import "./PromoApp.css";
-import celular from "./images/landing_page_image-croped-5-1-1.png"
+import celular from "../images/landing_page_image-croped-5-1-1.png"
 
 const PromoApp = () => {
     return(

@@ -1,19 +1,14 @@
 import './App.css';
-import Cupones from './components/Cupones';
-import Destacado from './components/Destacado';
 import Footer from './components/Footer';
-import Header from './components/Header';
-import PromoApp from './components/PromoApp';
-import Navbar from './components/Navbar';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
 
 function App() {
   return (
     <div className='container-fluid fondo'>
       <Header />
       <hr />
-      <Destacado />
-      <Cupones />
-      <PromoApp />
+      <Main />
       <Footer />
     </div>
   );
