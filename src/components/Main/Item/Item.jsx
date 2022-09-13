@@ -1,5 +1,6 @@
 import React from "react"
 
+
 const Item = ({nombre, imagen, precio}) => {
     return (
         <div className="card">

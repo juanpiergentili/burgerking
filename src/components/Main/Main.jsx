@@ -1,9 +1,9 @@
 import React from "react";
 import Cupones from "./Cupones";
 import Destacado from "./Destacado";
-import ItemListContainer from "./ItemListContainer";
+import ItemListContainer from "../Container/ItemListContainer";
 import PromoApp from "./PromoApp";
-import ItemCount from "./ItemCount";
+import ItemCount from "../Main/Item/ItemCount";
 
 const Main = () => {
     return(
