@@ -8,9 +8,9 @@ import ItemCount from "./ItemCount";
 const Main = () => {
     return(
         <div>
-            <ItemCount stock={4} initial={1} onAdd={0}/>
-            <ItemListContainer/>
             <Destacado />
+            <ItemListContainer/>
+            <ItemCount stock={4} initial={1} onAdd={0}/>
             <Cupones />
             <PromoApp />
         </div>
