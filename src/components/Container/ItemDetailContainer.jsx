@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
-import {productos} from '../../mock/productos';
-import ItemDetail from "../Main/ItemDetail";
+import React from "react";
+import ItemDetail from "../Main/Item/ItemDetail";
+import { productos } from "../Main/productos";
 
 const ItemDetailContainer = () => {
-    const [item, setItem] = useState({})
+    const [item, setItem] = React.useState({})
 
-    useEffect(() => {
+    React.useEffect(() => {
         const getProductos = () =>
         new Promise ((res, rej) =>{
             const product = productos.find((prod) => prod.id === 1)
@@ -16,16 +15,16 @@ const ItemDetailContainer = () => {
         })
         getProductos()
         .then((info) => {
-            setItem(info)
+            setItem(info);
+            console.log(info)
         })
         .catch((error) => {
             console.log(error)
         })
-    }, [] )
+    }, [] );
     return (
         <div style={{minHeight: '70vh'}}>
             <ItemDetail item={item} />
-
         </div>
     );
 };

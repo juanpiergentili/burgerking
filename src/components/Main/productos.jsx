@@ -1,5 +1,12 @@
 export const productos = [
-    {"id":1, "nombre":"Doble Cuarto XL", "imagen":"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_DOBLE-CUARTO-XL_1200X800_020822.png", "precio":750},
+    {
+        id:1,
+        nombre:"Doble Cuarto XL",
+        stock: 5,
+        descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
+        ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_DOBLE-CUARTO-XL_1200X800_020822.png",
+        precio: 750},
     {"id":2, "nombre":"Stacker XL Triple", "imagen":"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_STACKER-XL-_1200X800_020822.png", "precio":950},
     {"id":3, "nombre":"Whopper Chimiburga de Carne", "imagen":"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Chimiburga_Carne.png", "precio":700},
     {"id":4, "nombre":"Bacon King Carne", "imagen":"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Bacon-King-Carne.png", "precio":800},
