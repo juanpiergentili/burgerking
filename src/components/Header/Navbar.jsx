@@ -7,16 +7,16 @@ const Navbar = () => {
         <div className="d-flex">
             <ul className="nav d-flex align-items-center">
                 <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="..."><img src={logo} width="48" alt="Burguer"/></a>
+                    <a className="nav-link active" aria-current="page" href="./"><img src={logo} width="48" alt="Burguer"/></a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link_header" href="...">Pedí tu combo favorito! </a>
+                    <a className="nav-link link_header" href="./menu">Pedí tu combo favorito! </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link_header" href="...">Menu</a>
+                    <a className="nav-link link_header" href="./menu">Menu</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link link_header" href="...">Cupones</a>
+                    <a className="nav-link link_header" href="./cupones">Cupones</a>
                 </li>
             </ul>
             <div className="carrito">
