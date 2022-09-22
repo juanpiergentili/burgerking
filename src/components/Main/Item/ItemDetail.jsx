@@ -14,7 +14,7 @@ const ItemDetail = ({ item }) => {
                         <p className="fs-2 text-center">{item.descripcion}</p>
                         <p className="fs-4 text-center">{item.ingredientes}</p>
                         <h3>${item.precio}</h3>
-                        <ItemCount stock={5} initial={1} onAdd={0} />
+                        <ItemCount stock={item.stock} initial={1} onAdd={0} />
                 </div>    
             </div>
         </div>

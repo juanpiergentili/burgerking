@@ -1,26 +1,28 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
 import ItemList from "../Main/Item/ItemList";
-import { productos } from "../Main/productos";
+import {useParams} from "react-router-dom";
+import { getItemsList } from "../../utils/customFetch";
+import { useEffect } from "react";
+
 
 const ItemListContainer = () => {
     const [items, setItems] = useState([]);
 
-    useEffect(() => {
+    const {categoryId} = useParams();
 
-        const getProductos = new Promise((resolve) => {
-            setTimeout(() => {
-                resolve(productos);
-            }, 500);
+    useEffect(() => {    
+
+        getItemsList(categoryId).then((respuesta) =>{   
+                setItems(respuesta);
+            });
+    
+        getItemsList(categoryId).catch((error) =>{   
+            console.log(error);
         });
-
-        getProductos.then((respuesta) => {
-            setItems(respuesta);
-        });
-    }, []);
-
-    return (
+    }, [categoryId]); 
+        
+        return (
         <div className="container">
             <ItemList items={items} />
         </div>

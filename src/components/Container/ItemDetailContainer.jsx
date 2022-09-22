@@ -1,31 +1,33 @@
 import React from "react";
 import ItemDetail from "../Main/Item/ItemDetail";
-import { productos } from "../Main/productos";
+import {useParams} from "react-router-dom";
+import { getItemId } from "../../utils/customFetch";
 
 
-const ItemDetailContainer = () => {
-    const [item, setItem] = React.useState({})
+
+
+const ItemDetailContainer = () =>{
+
+    const [item, setItem] = React.useState({});
+
+    const {id} = useParams();
+
     React.useEffect(() => {
-        const getProductos = () =>
-        new Promise ((res, rej) =>{
-            const product = productos.find((prod) => prod.id === 4)
-            setTimeout(()=>{
-                res(product)
-            }, 500)
-        })
-        getProductos()
-        .then((info) => {
-            setItem(info);
-            console.log(info)
-        })
-        .catch((error) => {
-            console.log(error)
-        })
-    }, [] );
+         getItemId(id).then((detalles) =>{
+            setItem(detalles);
+        });
+
+        getItemId(id).catch((error) =>{   
+            console.log(error);
+        });
+
+        }, [id]); 
+
     return (
-        <div style={{minHeight: '70vh'}}>
+        <div className="row">
             <ItemDetail item={item} />
         </div>
-    );
-};
+    )
+}
+
 export default ItemDetailContainer;

@@ -1,10 +1,15 @@
 import React from "react";
 import { useState } from "react";
+import {useParams} from "react-router-dom";
+import { getItemId } from "../../../utils/customFetch";
+
 
 const ItemCount = ({stock, initial, onAdd}) => {
     const [cantidad, setCantidad] = useState(initial);
     const [itemStock, setItemStock] = useState(stock);
     const [itemAdd, setItemAdd] = useState(onAdd);
+
+    const {id} = useParams();
 
     const decrementarCantidad = (valor) => {
         if (valor >0) {
@@ -22,6 +27,18 @@ const ItemCount = ({stock, initial, onAdd}) => {
             setItemAdd(itemAdd + cantidad)
         }
     }
+          
+    React.useEffect(() => {
+
+        getItemId(id).then((detalles) =>{   
+           setItemStock(detalles.stock);
+       });
+
+        getItemId(id).catch((error) =>{   
+           console.log(error);
+       });
+
+        }, [id]); 
     return (
         <div className="container py-5">
             <div className="row">
