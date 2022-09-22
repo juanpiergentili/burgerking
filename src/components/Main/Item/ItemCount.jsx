@@ -22,7 +22,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
         }
     }
     const agregarProductos = () => {
-        if (cantidad <= itemStock) {
+        if (itemStock > 0) {
             setItemStock (itemStock - cantidad)
             setItemAdd(itemAdd + cantidad)
         }
@@ -46,8 +46,10 @@ const ItemCount = ({stock, initial, onAdd}) => {
                     <p>Hamburguesas Burgerking</p>
                     <div className="input-group">
                         <input type="button" className="btn btn-secondary" value="-" onClick={() => {decrementarCantidad(cantidad - 1)}}/>
+
                         <input type="text" className="form-control" value={cantidad} onChange={() =>{}} />
                         <input type="button" className="btn btn-secondary" value="+" onClick={() => {incrementarCantidad(cantidad + 1)}}/>
+                        
                     </div>
                     <div className="d-grid gap-2 py-3">
                         <input type="button" className="btn btn-secondary" value="Agregar" onClick={() => {agregarProductos()}} />

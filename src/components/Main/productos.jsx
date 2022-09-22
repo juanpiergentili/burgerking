@@ -3,11 +3,10 @@ export const Productos = [
         id:"1",
         nombre:"Doble Cuarto XL",
         cat: "carne",
-        stock: 5,
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_DOBLE-CUARTO-XL_1200X800_020822.png",
-
+        stock: 1,
         precio: 750},
     {
         id:"2", 
@@ -16,6 +15,7 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_STACKER-XL-_1200X800_020822.png",
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        stock: 2,
         precio:950},
     {
         id:"3", 
@@ -24,6 +24,7 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Chimiburga_Carne.png",
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        stock: 3,
         precio:700},
     {
         id:"4", 
@@ -32,6 +33,7 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/Bacon-King-Carne.png", 
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        stock: 4,
         precio:800},
 
     {
@@ -41,6 +43,7 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/DobleNapolitano-XL-1.png", 
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        stock: 5,
         precio:900},
     {
         id:"6", 
@@ -49,6 +52,7 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/WowCamole_carne_300322.png", 
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        stock: 6,
         precio:850},
 
     {
@@ -58,6 +62,7 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-bk-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/BK_WEB_BBQ-BACON-DOBLE_1200X800_020822.png", 
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        stock: 7,
         precio:1150},
 
     {
@@ -67,6 +72,7 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/WhopperVegetal_2604.png", 
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
+        stock: 8,
         precio:1100},
 
     {
@@ -76,5 +82,6 @@ export const Productos = [
         imagen:"https://s3-eu-central-1.amazonaws.com/www.burgerking.com.ar.v2/wp-media-folder-burger-king-argentina//home/ubuntu/preview/menu-app/frontend/apps/marketing-website-wordpress-app/web/app/uploads/sites/5/King-de-Pollo_2604.png", 
         descripcion:"Esta hamburguesa es la mas solicitada en nuestras sucursales",
         ingredientes:"Panceta, huevo frito, doble medallon de carne de ternera 180gr, cheddar, tomate.",
-        precio:650}
+        precio:650,
+        stock: 9}
 ];
