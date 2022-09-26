@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../images/burguer.png";
-import Cart from "./CartWidget";
 import {Link} from "react-router-dom";
+import CartWidget from "./CartWidget";
 
 const Navbar = () => {
     return(
@@ -27,7 +27,7 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className="carrito">
-                   <Cart cantidad="10" />
+                   <CartWidget />
                 </div>
         </div>
     )
