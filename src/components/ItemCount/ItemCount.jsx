@@ -1,14 +1,9 @@
 import React from "react";
-import { useState } from "react";
-import {useParams} from "react-router-dom";
-import { getItemId } from "../../../utils/customFetch";
 
 const ItemCount = ({initial, stock, onAdd}) =>{
 
-    const [counter, setCounter] = useState(initial);
-    const [itemStock, setItemStock] = useState(stock);
-
-    const {id} = useParams();
+    const [counter, setCounter] = React.useState(initial);
+    const [itemStock, setItemStock] = React.useState(stock);
 
     const decrementarCantidad = (valor) => {
         if (valor >0){
@@ -31,20 +26,8 @@ const ItemCount = ({initial, stock, onAdd}) =>{
     }
       
     React.useEffect(() => {
-
-        getItemId(id).then((detalles) =>{   
-           setItemStock(detalles.stock);
-       });
-
-       /* en caso de que la peticion al servidor salga fallida se ejecutara el metodo catch */
-       getItemId(id).catch((error) =>{   
-           console.log(error);
-       });
-
-        /* los corchetes de la linea siguiente se utilizan a modo de filtro, 
-    para evitar que la actualizacion de los estados se ejecute todo el tiempo,
-    poniendo los corchetes se ejecuta 1 sola vez al inicio */
-        }, [id]); 
+            setItemStock(stock);
+        }, [stock]);
 
     return (
         <div className="container py-5">

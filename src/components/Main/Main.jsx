@@ -1,7 +1,7 @@
 import React from "react";
+import ItemListContainer from "../ItemListContainer/ItemListContainer";
 import Cupones from "./Cupones";
 import Destacado from "./Destacado";
-import ItemListContainer from "../Container/ItemListContainer";
 import PromoApp from "./PromoApp";
 
 const Main = () => {

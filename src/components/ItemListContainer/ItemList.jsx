@@ -1,6 +1,6 @@
 import React from "react";
-import Item from "../Item/Item";
 import {Link} from "react-router-dom";
+import Item from './Item'
 
 const ItemList = ({items}) => {
     return (

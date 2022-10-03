@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "../images/burguer.png";
 import {Link} from "react-router-dom";
-import CartWidget from "./CartWidget";
+import CartWidget from "../CartWidget/CartWidget";
+
 
 const Navbar = () => {
     return(
